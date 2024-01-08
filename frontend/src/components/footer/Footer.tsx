@@ -10,7 +10,7 @@ const Footer = () => {
         }}
       >
         <p style={{ fontSize: "30px", textAlign: "center", padding: "20px" }}>
-          Build by Yash Somani!
+          Goodspace Assignment!
           
           
         </p>
