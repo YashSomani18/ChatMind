@@ -8,7 +8,8 @@ import { AuthProvider } from "./context/AuthContext.tsx";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3000/api/v1" || process.env.REACT_APP_BACKEND_URL;
+axios.defaults.baseURL =
+  "https://chatmind-b9a0.onrender.com/api/v1" || "http://localhost:3000/api/v1";
 axios.defaults.withCredentials = true;
 
 const theme = createTheme({
