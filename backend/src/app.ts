@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://chatmindyash.netlify.app"],
+    origin: ["https://chatmindyash.netlify.app/", "http://localhost:5173"],
     credentials: true,
     optionsSuccessStatus: 200,
   })
