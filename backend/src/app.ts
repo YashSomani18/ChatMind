@@ -13,8 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(cors({
-    origin: ["https://localhost:5173", "https://chatmindyash.netlify.app"],
-    credentials: true, // This must be set for Access-Control-Allow-Credentials
+    origin: ["http://localhost:5173", "https://chatmindyash.netlify.app"],
+    credentials: true, 
     optionsSuccessStatus: 200
   }));
   
