@@ -12,9 +12,12 @@ const app = express();
 //Middlewares
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
-app.use(cors({origin:["https://localhost:5173","https://chatmindyash.netlify.app"] 
-
-, credentials:true , optionsSuccessStatus:200}));
+app.use(cors({
+    origin: ["https://localhost:5173", "https://chatmindyash.netlify.app"],
+    credentials: true, // This must be set for Access-Control-Allow-Credentials
+    optionsSuccessStatus: 200
+  }));
+  
 
 
 //remove it in production
