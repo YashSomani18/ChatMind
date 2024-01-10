@@ -11,6 +11,8 @@ const app = express();
 //Middlewares
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
+
+// Set CORS headers
 app.use(
   cors({
     origin: ["https://chatmindyash.netlify.app", "http://localhost:5173"],
