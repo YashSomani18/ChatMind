@@ -2,9 +2,9 @@ import app from "./app.js";
 import { connectToDatabase } from "./db/connection.js";
 
 // Connections and Listeners
-const PORT = process.env.PORT || 3000;
+const PORT =  3000;
 connectToDatabase().then(() => {
   app.listen(PORT, () => {
-    console.log("Server 3000 is connected! ");
+    console.log(`Server ${PORT} is connected! `);
   });
 }).catch(err => console.log(err)); 

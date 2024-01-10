@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 
 axios.defaults.baseURL =
-  "https://chatmind-b9a0.onrender.com/api/v1" || "http://localhost:3000/api/v1";
+  "https://chatmind-b9a0.onrender.com/api/v1" ;
 axios.defaults.withCredentials = true;
 
 const theme = createTheme({
