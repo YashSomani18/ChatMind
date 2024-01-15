@@ -14,12 +14,11 @@ app.use(cookieParser(process.env.COOKIE_SECRET));
 // Set CORS headers
 app.use(
   cors({
-    origin: [process.env.CORS_ORIGIN, "http://localhost:5173"],
+    origin: process.env.CORS_ORIGIN,
     credentials: true,
     optionsSuccessStatus: 200,
   })
 );
-
 
 app.use("/api/v1", appRouter);
 
